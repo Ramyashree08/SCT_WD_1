@@ -1,0 +1,60 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 60px 20px;
+    height: 100vh;
+}
+
+/* Navigation Menu */
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+#navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    padding: 15px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+}
+
+/* Hover effect */
+#navbar a:hover {
+    background-color: #575757;
+}
+
+/* Scroll effect (applies when scrolled down) */
+.scrolled {
+    background-color: #222;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
